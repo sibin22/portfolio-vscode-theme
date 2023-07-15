@@ -1,0 +1,78 @@
+.container{
+    color:#eee;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3vh;
+    height: 83.7vh;
+    overflow-y: hidden;
+   
+}
+
+
+.about{
+    font-family: 'Cascadia Code';
+    text-align: center;
+    margin: auto;
+    padding: 3vh;
+    
+}
+h2{
+    
+    background: linear-gradient(
+        to right,
+        #7953cd 20%,
+        #00affa 30%,
+        #0190cd 70%,
+        #764ada 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 5s ease-in-out infinite alternate;
+}
+@keyframes textShine {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+.pic{
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.pic img{
+
+        max-width: 100%;
+        height: auto;
+      
+    padding: 6vw;
+}
+
+  
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* Styles for tablets in portrait mode */
+    .about{
+        overflow-y: auto;
+    }
+    .container{
+        grid-template-columns: 1fr;
+    }  
+  .pic img{
+    display: none;
+}}
+
+@media (max-width: 767px) {
+    /* Styles for mobile devices */
+    .container{
+      grid-template-columns: 1fr; 
+      overflow-y: auto;
+    }
+    .pic img{
+        display: none;
+    }
+  }

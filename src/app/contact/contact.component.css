@@ -1,0 +1,80 @@
+.container{
+    color:#eee;
+    display: grid;
+    grid-template-columns: 1fr 10px 1fr;
+    font-family: 'Cascadia Code';
+    padding: 4vh;
+    height: 83.7vh;
+}
+
+.socials{
+    padding: 20px;
+    font-size: 1.2rem;
+
+}
+.socials-item::first-letter{
+    color: rgb(101, 102, 103);
+}
+.socials-item {
+    color: rgb(227, 156, 4);
+}
+.socials-item a{
+    color:rgb(214, 91, 3);
+    text-decoration: none;
+
+}
+
+
+.socials-item a:hover{
+    text-decoration: underline;
+}
+
+
+.form{
+    padding: 20px;
+}
+form{
+    padding-top: 30px;
+}
+input,textarea{
+    box-sizing: border-box;
+    border: none;
+    resize: none;
+}
+.form-control{
+    background-color: rgba(96, 96, 96, 0.511);
+}
+label{
+    color: rgb(219, 220, 220);
+}
+.btn{
+    background-color: rgb(227, 156, 4);
+}
+.slash{
+    background-color: rgb(1, 151, 151);
+    width: 1px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* Styles for tablets in portrait mode */
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        overflow-y: auto;
+    }  
+  }
+@media (max-width: 767px) {
+  /* Styles for mobile devices */
+  
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        overflow-y: auto;
+        
+    } 
+    .slash{
+        display: none;
+    }
+   }
