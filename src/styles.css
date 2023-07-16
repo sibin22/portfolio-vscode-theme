@@ -13,3 +13,26 @@ html, body {
     height: 100%;
   }
   
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+  
+    background: #000000;
+    border-left: solid 1px rgba(172, 172, 172, 0.377);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #5a595978;
+    border-radius: 40px;
+  
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555555b5;
+  }
