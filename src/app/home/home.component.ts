@@ -9,8 +9,8 @@ export class HomeComponent {
 
   downloadFile() {
     const link = document.createElement('a');
-    link.href = "./assets/images/Sibin.R FD.pdf";
-    link.download = 'Sibin.R FD.pdf';
+    link.href = "./assets/images/Sibin.R (1).pdf";
+    link.download = 'Sibin.R (1).pdf';
     link.click();
   }
   
