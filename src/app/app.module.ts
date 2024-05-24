@@ -9,6 +9,7 @@ import { AboutComponent } from './about/about.component';
 import { ProjectComponent } from './project/project.component';
 import { ContactComponent } from './contact/contact.component';
 import {NgxTypedJsModule} from 'ngx-typed-js';
+import { SkillComponent } from './skill/skill.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +17,8 @@ import {NgxTypedJsModule} from 'ngx-typed-js';
     ExpComponent,
     AboutComponent,
     ProjectComponent,
-    ContactComponent
+    ContactComponent,
+    SkillComponent
   ],
   imports: [
     BrowserModule,

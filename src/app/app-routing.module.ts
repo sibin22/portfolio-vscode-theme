@@ -5,19 +5,20 @@ import { ExpComponent } from './exp/exp.component';
 import { ProjectComponent } from './project/project.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { SkillComponent } from './skill/skill.component';
 
 const routes: Routes = [
-  {path: '',redirectTo:'home',pathMatch:'full'},
-  {path: 'home', component: HomeComponent},
-  {path: 'exp', component: ExpComponent},
-  {path: 'project', component: ProjectComponent},
-  {path: 'about', component: AboutComponent},
-  {path: 'contact', component: ContactComponent},
- 
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
+  { path: 'exp', component: ExpComponent },
+  { path: 'skill', component: SkillComponent },
+  { path: 'project', component: ProjectComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'contact', component: ContactComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
